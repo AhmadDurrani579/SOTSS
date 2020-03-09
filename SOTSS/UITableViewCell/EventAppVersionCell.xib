@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Bold.otf">
+            <string>Poppins-Bold</string>
+        </array>
+        <array key="Poppins-Medium.otf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="EventAppVersionCell" rowHeight="89" id="KGk-i7-Jjw" customClass="EventAppVersionCell" customModule="SOT_Events" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="88.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4hK-Ga-psR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="3" id="HR8-5R-C23"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SOT Events App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T32-Ff-Odm">
+                        <rect key="frame" x="25" y="21" width="279" height="22.5"/>
+                        <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="16"/>
+                        <color key="textColor" red="0.50196078431372548" green="0.54117647058823526" blue="0.58039215686274503" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version   : 1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWF-5y-9VR">
+                        <rect key="frame" x="25" y="51" width="279" height="22.5"/>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
+                        <color key="textColor" red="0.50196078430000002" green="0.54117647059999996" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.035294117647058823" green="0.078431372549019607" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="T32-Ff-Odm" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="CYq-rz-rhX"/>
+                    <constraint firstItem="T32-Ff-Odm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="9" id="TPr-05-Hdk"/>
+                    <constraint firstItem="4hK-Ga-psR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="WEc-IW-ygo"/>
+                    <constraint firstItem="pWF-5y-9VR" firstAttribute="top" secondItem="T32-Ff-Odm" secondAttribute="bottom" constant="7.5" id="XVr-hr-9eb"/>
+                    <constraint firstItem="pWF-5y-9VR" firstAttribute="trailing" secondItem="T32-Ff-Odm" secondAttribute="trailing" id="aJ4-SR-A0c"/>
+                    <constraint firstItem="4hK-Ga-psR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="gSO-gY-yMT"/>
+                    <constraint firstAttribute="trailing" secondItem="4hK-Ga-psR" secondAttribute="trailing" id="hZi-9p-Wp0"/>
+                    <constraint firstItem="T32-Ff-Odm" firstAttribute="top" secondItem="4hK-Ga-psR" secondAttribute="bottom" constant="18" id="sF7-wL-2UL"/>
+                    <constraint firstItem="pWF-5y-9VR" firstAttribute="leading" secondItem="T32-Ff-Odm" secondAttribute="leading" id="uWB-eF-Y1L"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="34" y="76.5"/>
+        </tableViewCell>
+    </objects>
+</document>

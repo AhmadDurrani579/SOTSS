@@ -1,0 +1,69 @@
+PODS:
+  - ActionSheetPicker-3.0 (2.3.0)
+  - Alamofire (4.8.2)
+  - AlamofireObjectMapper (4.1.0):
+    - Alamofire (~> 4.1)
+    - ObjectMapper (~> 2.0)
+  - Cosmos (19.0.3)
+  - DatePickerDialog (3.0)
+  - IQKeyboardManagerSwift (5.0.0)
+  - NVActivityIndicatorView (4.7.0):
+    - NVActivityIndicatorView/Presenter (= 4.7.0)
+  - NVActivityIndicatorView/Presenter (4.7.0)
+  - ObjectMapper (2.2.9)
+  - PKRevealController (2.0.6)
+  - RangeSeekSlider (1.8.0)
+  - SDWebImage (3.8.3):
+    - SDWebImage/Core (= 3.8.3)
+  - SDWebImage/Core (3.8.3)
+  - SVProgressHUD (2.0-beta)
+  - SwiftyUserDefaults (4.0.0)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0
+  - Alamofire
+  - AlamofireObjectMapper (~> 4.0)
+  - Cosmos
+  - DatePickerDialog
+  - IQKeyboardManagerSwift (= 5.0.0)
+  - NVActivityIndicatorView
+  - PKRevealController
+  - RangeSeekSlider
+  - SDWebImage (~> 3.8)
+  - SVProgressHUD (= 2.0-beta)
+  - SwiftyUserDefaults
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ActionSheetPicker-3.0
+    - Alamofire
+    - AlamofireObjectMapper
+    - Cosmos
+    - DatePickerDialog
+    - IQKeyboardManagerSwift
+    - NVActivityIndicatorView
+    - ObjectMapper
+    - PKRevealController
+    - RangeSeekSlider
+    - SDWebImage
+    - SVProgressHUD
+    - SwiftyUserDefaults
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: eef157d75e151f255c5333d26656c7fbfe905a51
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  AlamofireObjectMapper: 435adc82f5b367679bd9e71c4974a54efd0b2521
+  Cosmos: a6fb17284281fa12cf4c85c2efecd440a215ec44
+  DatePickerDialog: 03dbb8350bfa80302ab2a8c83cee1fec70184444
+  IQKeyboardManagerSwift: 3f340202ebe1a7076279b9b9b3c817243ddb3aab
+  NVActivityIndicatorView: b19ddab2576f805cbe0fb2306cba3476e09a1dea
+  ObjectMapper: 63cfe41bc6f8e7c8f44344c49901b8ae7de14c52
+  PKRevealController: ffb45a16f5a5032ad90a3d16e5cbb0d8e035bd58
+  RangeSeekSlider: 650b11fa1edcb92e1e0ede797669d98622570fb5
+  SDWebImage: a72e880a8fe0f7fc31efe15aaed443c074d2a80c
+  SVProgressHUD: c83337f10ed32d701c423d519059a249973c8662
+  SwiftyUserDefaults: 6a1951df1daa19337862b677dd9a4b9bd4c288cd
+
+PODFILE CHECKSUM: 9f2f3890948ffbd696bacdec14eabae885ea939c
+
+COCOAPODS: 1.7.5

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.otf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SEOptionCell" rowHeight="63" id="KGk-i7-Jjw" customClass="SEOptionCell" customModule="SOT_Events" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="62.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="US0-6O-qrQ" customClass="CardView" customModule="SOT_Events" customModuleProvider="target">
+                        <rect key="frame" x="11" y="0.0" width="298" height="63"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bV8-GI-7mf">
+                                <rect key="frame" x="8" y="62" width="282" height="1"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Vul-aZ-CYq"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dz7-mC-9dR">
+                                <rect key="frame" x="15" y="20.5" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="HlU-Vr-ZRj"/>
+                                    <constraint firstAttribute="width" constant="22" id="Njq-mm-r3c"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="radio_unclicked">
+                                    <color key="titleColor" red="0.46274509803921571" green="0.46274509803921571" blue="0.46274509803921571" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected" image="radio_clicked"/>
+                                <connections>
+                                    <action selector="btnChoiseOption_Selected:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="l1y-C5-fzr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43b-fU-8Py">
+                                <rect key="frame" x="49" y="22.5" width="241" height="18.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bV8-GI-7mf" secondAttribute="trailing" constant="8" id="2Pz-OS-Ia8"/>
+                            <constraint firstItem="bV8-GI-7mf" firstAttribute="leading" secondItem="US0-6O-qrQ" secondAttribute="leading" constant="8" id="GaO-Ur-Mid"/>
+                            <constraint firstItem="43b-fU-8Py" firstAttribute="leading" secondItem="dz7-mC-9dR" secondAttribute="trailing" constant="12" id="JyX-No-KXN"/>
+                            <constraint firstItem="43b-fU-8Py" firstAttribute="centerY" secondItem="dz7-mC-9dR" secondAttribute="centerY" id="Mxy-cj-VKA"/>
+                            <constraint firstAttribute="bottom" secondItem="bV8-GI-7mf" secondAttribute="bottom" id="b3t-Sj-IAC"/>
+                            <constraint firstItem="dz7-mC-9dR" firstAttribute="centerY" secondItem="US0-6O-qrQ" secondAttribute="centerY" id="j0l-sX-K0J"/>
+                            <constraint firstAttribute="trailing" secondItem="43b-fU-8Py" secondAttribute="trailing" constant="8" id="tzb-Zq-fT8"/>
+                            <constraint firstItem="dz7-mC-9dR" firstAttribute="leading" secondItem="US0-6O-qrQ" secondAttribute="leading" constant="15" id="y1S-GT-ECc"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="US0-6O-qrQ" secondAttribute="bottom" id="0df-FZ-oPw"/>
+                    <constraint firstItem="US0-6O-qrQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bM7-KQ-o9r"/>
+                    <constraint firstItem="US0-6O-qrQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="11" id="fju-X4-9Yj"/>
+                    <constraint firstAttribute="trailing" secondItem="US0-6O-qrQ" secondAttribute="trailing" constant="11" id="v21-0x-mYb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblOption" destination="43b-fU-8Py" id="xbq-Ff-y3W"/>
+            </connections>
+            <point key="canvasLocation" x="14" y="-30.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="radio_clicked" width="16" height="16"/>
+        <image name="radio_unclicked" width="16" height="16"/>
+    </resources>
+</document>

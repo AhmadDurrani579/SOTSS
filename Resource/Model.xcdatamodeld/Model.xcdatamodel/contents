@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17G65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="EventModel" representedClassName="EventModel" syncable="YES">
+        <attribute name="active" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="display_date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="end_date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="event_category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="event_desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="event_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="event_title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fullsteam_desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="location_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="location_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="session_tagline" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="speaker_tagline" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="start_date" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Participation" representedClassName="Participation" syncable="YES">
+        <attribute name="designation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="experties" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="linkedin_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="participant_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="participant_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="participant_photo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profile_desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profile_tags" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="role_desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="role_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sub_designation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="twitter_url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="particpant" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProgramModel" inverseName="participantInProgram" inverseEntity="ProgramModel" syncable="YES"/>
+    </entity>
+    <entity name="ProgramModel" representedClassName="ProgramModel" syncable="YES">
+        <attribute name="abstract" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="activity_date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="activity_desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="activity_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="activity_title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="activity_type_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="allow_register" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attendance" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="day_session" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="display_date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="end_time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="evaluation_active" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="evaluation_exists" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="evaluation_submitted" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="event_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inactive_status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="location_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="poll_active" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="poll_exists" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="poll_submitted" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="schedule_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="start_time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="theme_desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="theme_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="venue_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="venue_title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="participantInProgram" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Participation" inverseName="particpant" inverseEntity="Participation" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="EventModel" positionX="-369" positionY="60" width="128" height="255"/>
+        <element name="Participation" positionX="34" positionY="323" width="128" height="253"/>
+        <element name="ProgramModel" positionX="-189" positionY="108" width="128" height="463"/>
+    </elements>
+</model>
